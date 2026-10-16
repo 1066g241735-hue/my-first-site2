@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>村川璃子のサイト</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let jikan = new Date();
+        let hour = jikan.getHours();
+        let minute = jikan.getMinutes();
+        let secound = jikan.getSeconds();
+        let year = jikan.getFullYear() - 2018;
+        let month = jikan.getMonth() + 1;
+        let date = jikan.getDate();
+        let weekday = jikan.getDay();
+        window.alert("今日は令和" + year + "年" + month + "月" + date + "日です");
+        if(weekday == 5){
+           window.alert("今日は木曜日です"); 
+        } else{
+            window.alert("今日は木曜日ではありません")
+        }
+        window.alert("ようこそ！現在は" + hour + "時" + minute + "分" + secound + "秒です");
+    </script>
+</head>
+<body>
+    <div id="header">
+        <h2>村川璃子のサイト</h2>
+    </div>
+    <div id="main">
+        <h2>見出し１</h2>
+        <p>ここに文章が入ります。</p>
+        <p>見出し２</p>
+        <p>ここに文章が入ります。</p>
+    </div>
+    <div id="footer">
+        <p>copyright (c) 2026 toshiya muraakwa.all right reserved.</p>
+    </div>
+</body>
+</html>
